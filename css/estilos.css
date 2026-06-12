@@ -1,0 +1,358 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    min-height:100vh;
+}
+
+
+
+.login-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url('https://campus.univo.edu.sv/pluginfile.php/1/theme_moove/sliderimage1/1778867467/1500x540px%20.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.login-container{
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(10px);
+
+    width:430px;
+    padding:45px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 25px 50px rgba(0,0,0,0.25);
+
+    border:1px solid rgba(255,255,255,0.3);
+}
+
+.logo-login{
+    width:200px;
+    display:block;
+    margin:0 auto 20px auto;
+}
+
+.login-container h1{
+    text-align:center;
+    color:#1e3a8a;
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+.login-container p{
+    text-align:center;
+    color:#64748b;
+    margin-bottom:25px;
+    font-size:1rem;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input{
+    padding:14px;
+    border:1px solid #d1d5db;
+    border-radius:12px;
+    transition:0.3s;
+    font-size:1rem;
+}
+
+input:focus{
+    outline:none;
+    border-color:#1e3a8a;
+    box-shadow:0 0 15px rgba(30,58,138,0.2);
+}
+
+
+
+button{
+    padding:13px 20px;
+    border:none;
+    background:#1e3a8a;
+    color:white;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:600;
+    transition:all 0.3s ease;
+}
+
+button:hover{
+    background:#16306f;
+    transform:translateY(-2px);
+}
+
+
+
+.dashboard{
+    width:95%;
+    max-width:1500px;
+    margin:30px auto;
+    padding:20px;
+}
+
+.dashboard h1{
+    margin-bottom:10px;
+    font-size:3rem;
+}
+
+.dashboard h2{
+    margin-top:30px;
+    margin-bottom:20px;
+    color:#1e3a8a;
+    font-size:2rem;
+}
+
+
+
+.encabezado{
+    display:flex;
+    align-items:center;
+    gap:35px;
+
+    background:white;
+
+    padding:25px 40px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+    margin-bottom:40px;
+}
+
+.encabezado img{
+    width:220px;
+    transition:0.3s;
+}
+
+.encabezado img:hover{
+    transform:scale(1.05);
+}
+
+.encabezado h1{
+    color:#1e3a8a;
+    margin:0;
+    font-size:3.2rem;
+}
+
+.encabezado p{
+    color:#64748b;
+    font-size:1.2rem;
+    margin-top:8px;
+}
+
+
+.menu{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:35px;
+}
+
+.menu a{
+    text-decoration:none;
+}
+
+.menu button{
+    min-width:160px;
+}
+
+
+
+.card{
+    background:white;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    border-top:6px solid #1e3a8a;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+    transition:all 0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 18px 40px rgba(0,0,0,0.15);
+}
+
+.card h3{
+    color:#1e3a8a;
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+.card p{
+    margin-bottom:8px;
+    font-size:1.1rem;
+}
+
+.card button{
+    width:100%;
+    margin-top:20px;
+}
+
+
+
+.contenedor-cubiculos{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(400px,1fr));
+
+    gap:30px;
+
+    margin-top:20px;
+}
+
+card-cubiculo{
+    display:block;
+}
+
+
+
+.estadisticas{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin:35px 0;
+}
+
+.estadisticas .card{
+    text-align:center;
+    padding:40px;
+}
+
+.estadisticas h3{
+    font-size:3.5rem;
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+.estadisticas p{
+    font-size:1.2rem;
+}
+
+
+
+table{
+    width:100%;
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+}
+
+table th{
+    background:#1e3a8a;
+    color:white;
+    padding:18px;
+    text-align:left;
+}
+
+table td{
+    padding:16px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+table tr:hover{
+    background:#f8fafc;
+}
+
+
+
+.estado-activa{
+    background:#d1fae5;
+    color:#065f46;
+    padding:8px 14px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+.estado-cancelada{
+    background:#fee2e2;
+    color:#991b1b;
+    padding:8px 14px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+
+
+@media(max-width:768px){
+
+    .contenedor-cubiculos{
+        grid-template-columns:1fr;
+    }
+
+    .estadisticas{
+        grid-template-columns:1fr;
+    }
+
+    .encabezado{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .encabezado img{
+        width:160px;
+    }
+
+    .encabezado h1{
+        font-size:2rem;
+    }
+
+    .encabezado p{
+        font-size:1rem;
+    }
+
+    .menu{
+        flex-direction:column;
+    }
+
+    .menu button{
+        width:100%;
+    }
+
+    .dashboard h1{
+        font-size:2rem;
+    }
+
+    .dashboard h2{
+        font-size:1.5rem;
+    }
+}
